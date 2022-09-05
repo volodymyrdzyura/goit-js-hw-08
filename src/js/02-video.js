@@ -12,13 +12,6 @@ function timeStop (timeupdate) {
 }
 
 const currentTime = localStorage.getItem('videoplayer-current-time');
-player.setCurrentTime(currentTime).then(function () {
-  })
-  .catch(function (error) {
-    switch (error.name) {
-      case 'RangeError':
-        break;
-      default:
-        break;
-    }
-  });
+if (currentTime !== null){ 
+player.setCurrentTime(currentTime)
+};
