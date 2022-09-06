@@ -24,7 +24,7 @@ form.addEventListener('submit', function (event) {
 })
 
 function updateOutput() {
-    saveData = localStorage.getItem('feedback-form-state');
+    const saveData = localStorage.getItem('feedback-form-state');
     const parseData = JSON.parse(saveData);
     
 if (saveData) {
